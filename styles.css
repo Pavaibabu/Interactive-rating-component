@@ -1,0 +1,127 @@
+@import url("https://fonts.google.com/specimen/Overpass");
+:root{
+  --White: hsl(0, 0%, 100%);
+--Light-Grey: hsl(217, 12%, 63%);
+--Medium-Grey: hsl(216, 12%, 54%);
+--Dark-Blue: hsl(213, 19%, 18%);
+--Very-Dark-Blue: hsl(216, 12%, 8%);
+--Orange:rgb(233, 94, 13);
+--Secondary: hsl(215, 11%, 22%);
+}
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+  font-family: 'Overpass',sans-serif;
+}
+body{
+  min-height: 100vh;
+  background-color: var(--Very-Dark-Blue);
+  display:flex;
+  justify-content: center;
+  align-items:center;
+ 
+}
+.card{
+  padding:30px;
+  width:350px;
+  background-color:var(--Dark-Blue);
+  border-radius: 20px;;
+
+}
+.star{
+background-color:var(--Secondary);
+padding:20px;
+border-radius:50%;
+margin-bottom:1rem;
+}
+.title{
+  color:var(--White);
+  padding:5px;
+}
+.description{
+  color:var(--Medium-Grey);
+  padding:10px;
+  font-size: 15px;
+}
+.rating_span {
+display:flex;
+justify-content: space-between;
+margin-bottom:1rem;
+}
+span{
+  display:flex;
+  justify-content: space-between;
+  background-color:var(--Secondary);
+  color:var(--Medium-Grey);
+  padding:10px;
+  border-radius:50%;
+  cursor:pointer;
+}
+span:hover{
+  background-color: var(--Orange);
+  color:var(--White);
+}
+
+button{
+  text-transform: uppercase;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  padding:10px;
+  color:var(--White);
+  background-color: var(--Orange);
+  width:300px;
+  border-radius:20px;
+  border: none;
+  cursor: pointer;
+  
+}
+button:hover{
+  background-color: var(--White);
+  color:var(--Orange);
+}
+.thankyou {
+  flex-direction: column; /* Display the children in a vertical column */
+  align-items: center; /* Center the content horizontally */
+  text-align: center; /* Center the text */
+}
+.hidden{
+  display:none;
+}
+
+.thankyou p.topic {
+    background-color: var(--Secondary);
+    margin: 1rem auto; /* Adjust the margin as needed to control spacing */
+    color: var(--Orange);
+    font-size: 14px;
+    padding: 0.7rem;
+    border-radius: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Display on the same line */
+    text-align: center;
+  
+  
+
+   /* Add some spacing below the topic */
+}
+#rate{
+  color:var(--Orange);
+  border:none;
+  list-style: none;
+pointer-events: none;}
+.atm{
+  padding:20px;
+  margin-top:20px;
+}
+.attribution{
+  margin-top:20px;
+  font-size: 15px;
+  color:var(--Light-Grey);
+  margin-top: 30px;
+}
+.checked{
+  color:var(--White)!important;
+  background-color:var(--Orange)!important;
+}
